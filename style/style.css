@@ -15,10 +15,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../image/hero-bg.jpg);
-  filter: grayscale();
+  background-image: url(../image/hero-bg2.jpg);
+  /* filter: grayscale(); */
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   z-index: -1;
 }
 .hero {
@@ -32,15 +33,17 @@ body {
 }
 .hero h1 {
   font-family: 'Sacramento', cursive;
-  font-size: 6rem;
+  font-size: 7rem;
 }
 .hero h4 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
 }
 .hero p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .hero a {
+  padding: 0.5rem 1rem;
   color: var(--pink);
   background-color: #fff;
   box-shadow: var(--shadow);
@@ -67,16 +70,19 @@ body {
   }
   .simply-countdown > .simply-section {
     padding: 60px;
-    margin: 5px;
+    margin: 6px;
   }
 }
 /* Mobile Phone */
 @media (max-width: 576px) {
   html {
-    font-size: 60%;
+    font-size: 65%;
+  }
+  .hero a {
+    padding: 0.8rem 1rem;
   }
   .simply-countdown > .simply-section {
     padding: 40px;
-    margin: 2px;
+    margin: 16px 5px;
   }
 }
