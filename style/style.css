@@ -52,7 +52,9 @@ body {
   background-color: var(--pink);
   color: #fff;
 }
-
+.info {
+  min-height: 100vh;
+}
 /* Media Query */
 /* Laptop */
 @media (max-width: 992px) {
