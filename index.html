@@ -20,7 +20,7 @@
     <section id="hero" class="hero w-100 h-100 p-3 text-center d-flex justify-content-center align-items-center text-white">
       <main>
         <h4>Kepada <span>Bapak/Ibu/Saudara/i </span> di Tempat</h4>
-        <h1>Oki & Dia</h1>
+        <h1>Oki & Kia</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam</p>
         <div class="simply-countdown"></div>
         <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
@@ -55,7 +55,7 @@
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
             <h2>Acara Pernikahan</h2>
-            <h3>Diselenggarakan pada 12 Oktober 2023 di Ulujami, Jakarta Selatan</h3>
+            <h3>Diselenggarakan pada 11 Agustus 2024 di Ulujami, Jakarta Selatan</h3>
             <p>Oleh karena itu, dengan segala hormat kami mengundang Bapak/Ibu, Saudara/i untuk hadir pada acara pernikahan kami</p>
           </div>
         </div>
@@ -66,9 +66,9 @@
                 <h3>Oki Riski Fatulloh</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reprehenderit, maxime autem quisquam nesciunt eos quam quod ipsam laudantium porro.</p>
                 <p>
-                  Putra dari Bpk. Lorem <br />
+                  Putra dari Bpk. Iwan Siswandi <br />
                   dan <br />
-                  Ibu Ipsum
+                  Ibu Hariyah
                 </p>
               </div>
               <div class="col-4">
@@ -83,12 +83,12 @@
                 <img src="image/couple2.png" alt="Oki" class="img-responsive rounded-circle" />
               </div>
               <div class="col-8 text-start">
-                <h3>Fulanah</h3>
+                <h3>Kia Lestari</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reprehenderit, maxime autem quisquam nesciunt eos quam quod ipsam laudantium porro.</p>
                 <p>
-                  Putra dari Bpk. Lorem <br />
+                  Putra dari Bpk. Suyatno<br />
                   dan <br />
-                  Ibu Ipsum
+                  Ibu Sri Kaya
                 </p>
               </div>
             </div>
@@ -127,7 +127,7 @@
                   </div>
                   <div class="col-md-6">
                     <i class="bi bi-calendar3 d-block"></i>
-                    <span>Minggu, 12 Oktober 2023</span>
+                    <span>Minggu, 11 Agustus 2024</span>
                   </div>
                 </div>
               </div>
@@ -145,7 +145,7 @@
                   </div>
                   <div class="col-md-6">
                     <i class="bi bi-calendar3 d-block"></i>
-                    <span>Minggu, 12 Oktober 2023</span>
+                    <span>Minggu, 11 Agustus 2024</span>
                   </div>
                 </div>
               </div>
@@ -318,11 +318,11 @@
             <ul class="list-group">
               <li class="list-group-item bank py-2">
                 <div class="mb-2"><img src="image/bca.png" alt="Bank BCA" width="110px" /></div>
-                122314144 - OKI RISKI FATULLOH
+                411367531 - OKI RISKI FATULLOH
               </li>
               <li class="list-group-item bank py-2">
                 <div class="mb-2"><img src="image/bsi.png" alt="Bank BCA" width="120px" /></div>
-                900909099 - OKI RISKI FATULLOH
+                7147317578 - OKI RISKI FATULLOH
               </li>
               <li class="list-group-item py-2">
                 <div class="fw-bold">Saweria</div>
@@ -377,7 +377,7 @@
       simplyCountdown('.simply-countdown', {
         year: 2024, // required
         month: 8, // required
-        day: 10, // required
+        day: 11, // required
         hours: 8, // Default is 0 [0-23] integer
         words: {
           //words displayed into the countdown
@@ -465,7 +465,7 @@
       const nama = urlParams.get('n') || '';
       const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
       const namaContainer = document.querySelector('.hero h4 span');
-      namaContainer.innerText = `${pronoun} ${nama}`;
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
 
       document.querySelector('#nama').value = nama;
     </script>
